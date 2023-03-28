@@ -1,0 +1,113 @@
+Body Stl
+
+Mesh Bounding Box Size 0.554482 0.980103 0.400661
+Mesh Bounding Box Diag 1.195233 
+Mesh Bounding Box min -0.277241 -0.480103 0.000000
+Mesh Bounding Box max 0.277241 0.500000 0.400661
+Mesh Surface Area is 1.838956
+Mesh Total Len of 1809 Edges is 125.994682 Avg Len 0.069649
+Mesh Total Len of 1809 Edges is 125.994682 Avg Len 0.069649 (including faux edges)
+Thin shell (faces) barycenter: 0.000000 0.072266 0.155006
+Vertices barycenter 0.000000 0.254424 0.150139
+Mesh Volume is 0.132036
+Center of Mass is 0.000000 0.075619 0.169902
+Inertia Tensor is :
+| 0.008551 -0.000000 0.000000 |
+| -0.000000 0.004125 -0.000758 |
+| 0.000000 -0.000758 0.009503 |
+Principal axes are :
+| 0.000000 0.990572 0.136990 |
+| -1.000000 0.000000 0.000000 |
+| -0.000000 0.136990 -0.990572 |
+axis momenta are :
+| 0.004020 0.008551 0.009608 |
+
+Scale size = 10
+
+Volume = 0.132036
+
+mass = 2
+
+Inertia Tensor = |  0.008551 -0.000000  0.000000 |
+                 | -0.000000  0.004125 -0.000758 |
+                 |  0.000000 -0.000758  0.009503 |
+
+Inertia Value =  |  0.0006475 -0.000000  0.000000 |
+                 | -0.000000  0.0003125 -0.000000 |
+                 | -0.000000  0.000000  0.0007195 |
+
+Wheels Stl
+
+Mesh Bounding Box Size 0.088451 0.307710 0.307710
+Mesh Bounding Box Diag 0.444066 
+Mesh Bounding Box min -0.044229 -0.153855 -0.153855
+Mesh Bounding Box max 0.044223 0.153855 0.153855
+Mesh Surface Area is 0.280373
+Mesh Total Len of 2832 Edges is 64.712440 Avg Len 0.022850
+Mesh Total Len of 2832 Edges is 64.712440 Avg Len 0.022850 (including faux edges)
+Thin shell (faces) barycenter: -0.000000 -0.000000 0.000000
+Vertices barycenter 0.000001 -0.000000 0.000000
+Mesh Volume is 0.002549
+Center of Mass is -0.000002 -0.000000 0.000000
+Inertia Tensor is :
+| 0.000046 -0.000000 -0.000000 |
+| -0.000000 0.000024 -0.000000 |
+| -0.000000 -0.000000 0.000024 |
+Principal axes are :
+| -0.000000 -0.997710 -0.067635 |
+| -0.000000 0.067635 -0.997710 |
+| 1.000000 -0.000000 -0.000000 |
+axis momenta are :
+| 0.000024 0.000024 0.000046 |
+
+Scale size = 10
+
+Volume = 0.002549
+
+mass = 0.75
+
+Inertia Tensor = |  0.000046 -0.000000 -0.000000 |
+                 | -0.000000  0.000024 -0.000000 |
+                 | -0.000000 -0.000000  0.000024 |
+
+Inertia Value =  |  0.0001353 -0.0000000  0.0000000 |
+                 | -0.0000000  0.0000706 -0.0000000 |
+                 | -0.0000000  0.0000000  0.0000706 |
+
+Caster Wheels Stl
+
+Mesh Bounding Box Size 1.200000 1.200000 0.600000
+Mesh Bounding Box Diag 1.800000 
+Mesh Bounding Box min -0.600000 -0.600000 -0.600000
+Mesh Bounding Box max 0.600000 0.600000 0.000000
+Mesh Surface Area is 3.367543
+Mesh Total Len of 765 Edges is 95.844139 Avg Len 0.125286
+Mesh Total Len of 765 Edges is 95.844139 Avg Len 0.125286 (including faux edges))
+Thin shell (faces) barycenter: 0.000000 -0.000000 -0.199087
+Vertices barycenter 0.000000 0.000000 -0.344243
+Mesh Volume is 0.445169
+Center of Mass is 0.000000 0.000000 -0.224272
+Inertia Tensor is :
+| 0.041098 -0.000000 -0.000000 |
+| -0.000000 0.041098 0.000000 |
+| -0.000000 0.000000 0.063286 |
+Principal axes are :
+| 0.727589 0.686014 0.000000 |
+| 0.686014 -0.727589 0.000000 |
+| -0.000000 0.000000 1.000000 |
+axis momenta are :
+| 0.041098 0.041098 0.063286 |
+
+Scale size = 100
+
+Volume = 0.445169
+
+mass = 0.75
+
+Inertia Tensor = |  0.041098 -0.000000 -0.000000 |
+                 | -0.000000  0.041098  0.000000 |
+                 | -0.000000  0.000000  0.063286 |
+
+Inertia Value =  |  0.0000069 -0.0000000  0.000000000 |
+                 | -0.0000000  0.0000069 -0.000000000 |
+                 | -0.0000000  0.0000000  0.000000012 |

@@ -1,0 +1,148 @@
+<robot name="maze_bot">
+
+  <!-- 
+    - take a look into inertia_calculations.txt file
+    Inertia Values https://github.com/RobotnikAutomation/rb1_base_common/issues/1
+-   Get the inertia tensor 
+-   Scale 
+-   Divide by the volume
+-   Divide by scale*2 (scale -sqaurred)
+-   multiply with  mass you wantto give
+Thats why we use xacros
+
+ -->
+
+    <link name="base_footprint"/>
+    <link name="base">
+      <inertial>
+        <mass value="2" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <inertia ixx="0.00355" iyy="0.01265" izz="0.013832" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+
+      <visual>
+        <geometry>
+            <box size=".85 0.4 0.15"/>
+        </geometry>
+        <material name="gray">
+          <color rgba=".2 .2 .2 1" />
+        </material>
+      </visual>
+  
+      <collision>
+        <geometry>
+          <box size=".85 0.4 0.1"/>
+      </geometry>
+        <contact_coefficients mu="1" mu2="1" kp="1e+13.0" kd="1.0"/>
+      </collision>
+
+
+    </link>
+   <joint name="base_joint" type="fixed">
+      <parent link="base_footprint"/>
+      <child link="base"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </joint>
+
+
+ <link name="wheel_right">
+    <inertial>
+      <mass value="0.75"/>
+      <inertia ixx="0.001444223" iyy="0.00280875" izz="0.001444223" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin/>
+    </inertial>
+  
+      <visual>
+        
+        <geometry>
+            <cylinder radius=".15" length="0.02"/>
+        </geometry>
+
+        <material name="white">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+  
+      <collision>
+        <geometry>
+            <cylinder radius=".15" length="0.02"/>
+        </geometry>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+      </collision>
+
+    </link>
+  
+    <joint name="wheel_right_joint" type="continuous">
+      <origin xyz="-0.2 0.21 0.0  " rpy="1.57 0.0 0.0"/>
+      <parent link="base"/>
+      <child link="wheel_right"/>
+      <axis xyz="0.0 -1.0 0"/>
+    </joint>
+  
+    <link name="wheel_left">
+      <inertial>
+        <mass value="0.75"/>
+        <inertia ixx="0.001444223" iyy="0.00280875" izz="0.001444223" ixy="0.0" ixz="0.0" iyz="0.0" />
+        <origin/>
+      </inertial>
+  
+      <visual>
+        
+        <geometry>
+            <cylinder radius=".15" length="0.02"/>
+        </geometry>
+        
+        <material name="white">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+  
+      <collision>
+        <geometry>
+            <cylinder radius=".15" length="0.02"/>
+        </geometry>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+      </collision>
+    </link>
+  
+    <joint name="wheel_left_joint" type="continuous">
+      <origin xyz="-0.2 -0.21 0.0  " rpy="1.57 0.0 0.0"/>
+      <parent link="base"/>
+      <child link="wheel_left"/>
+      <axis xyz="0.0 1 0"/>
+  
+    </joint>
+  
+  
+    <link name="caster">
+
+      <inertial>
+        <mass value="0.75"/>
+        <inertia ixx="0.0001295" iyy="0.0001295" izz="0.000199322" ixy="0.0" ixz="0.0" iyz="0.0" />
+        <origin/>
+      </inertial>
+  
+      <visual>
+        <geometry>
+         <sphere radius=".06"/>
+      </geometry>
+        <material name="black" />
+      </visual>
+  
+      <collision>
+        <geometry>
+          <sphere radius=".06"/>
+      </geometry>
+        <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
+      </collision>
+    </link>
+  
+    <joint name="caster_joint" type="continuous">
+      <origin xyz="0.2 -0.007 -0.08" rpy="0.0 0.0 0.0"/>
+      <axis xyz="0 0 1" />
+      <parent link="base"/>
+      <child link="caster"/>
+    </joint> 
+
+</robot>
+  
